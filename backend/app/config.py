@@ -22,6 +22,13 @@ SECRET_KEY = os.getenv("SECRET_KEY", "please-change-this-secret-key")
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # token 有效期：24 小时
 
+# ---------- MiniMax 配置 ----------
+MINIMAX_API_KEY = os.getenv("MINIMAX_API_KEY", "")
+MINIMAX_BASE_URL = os.getenv("MINIMAX_BASE_URL", "https://api.minimaxi.com/v1").rstrip("/")
+MINIMAX_MODEL = os.getenv("MINIMAX_MODEL", "MiniMax-M2")
+MINIMAX_TIMEOUT_SECONDS = int(os.getenv("MINIMAX_TIMEOUT_SECONDS", "120"))
+MINIMAX_MAX_TOKENS = int(os.getenv("MINIMAX_MAX_TOKENS", "16000"))
+
 # ---------- CORS ----------
 ALLOWED_ORIGINS = [
     "http://localhost:5173",

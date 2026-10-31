@@ -4,7 +4,7 @@
       <template #header>
         <div class="card-title">
           <h2>欢迎登录</h2>
-          <p>Vue + FastAPI + MySQL 全栈项目</p>
+          <p>PLAYFORGE · AI 小游戏生成所</p>
         </div>
       </template>
 

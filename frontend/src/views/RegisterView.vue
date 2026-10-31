@@ -4,7 +4,7 @@
       <template #header>
         <div class="card-title">
           <h2>注册账号</h2>
-          <p>Vue + FastAPI + MySQL 全栈项目</p>
+          <p>PLAYFORGE · 创建你的游戏创作者账号</p>
         </div>
       </template>
 

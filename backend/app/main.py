@@ -3,9 +3,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import ALLOWED_ORIGINS
 from app.database import Base, engine
-from app.routers import auth
+from app.routers import auth, games
 
-app = FastAPI(title="专综2 项目 API", version="0.1.0")
+app = FastAPI(title="小游戏自动生成平台 API", version="1.0.0")
 
 # 跨域配置（开发阶段允许前端 Vite 访问）
 app.add_middleware(
@@ -18,6 +18,7 @@ app.add_middleware(
 
 # 注册路由
 app.include_router(auth.router)
+app.include_router(games.router)
 
 
 @app.on_event("startup")

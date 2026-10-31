@@ -16,6 +16,11 @@ const routes = [
     name: 'Home',
     component: () => import('../views/HomeView.vue'),
   },
+  {
+    path: '/workspace/:id',
+    name: 'Workspace',
+    component: () => import('../views/GameWorkspaceView.vue'),
+  },
 ]
 
 const router = createRouter({
